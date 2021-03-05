@@ -1,19 +1,15 @@
+server:
+  port: 8082
+
 spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: pass
   application:
-      name: movie
+    name: movie-api
   jpa:
     hibernate:
       ddl-auto: create-drop
     properties:
       dialect: org.hibernate.dialect.PostgreSQLDialect
 
-server:
-  port: 8082
-      
 eureka:
   client:
     serviceUrl:
